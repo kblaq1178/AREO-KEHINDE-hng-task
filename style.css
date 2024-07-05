@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main, footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #ffbc04;
+    color: #000;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.personal-info, .goals, .links, .time-display {
+    margin: 20px 0;
+}
+
+.personal-info img {
+    max-width: 150px;
+    border-radius: 20%;
+    display: block;
+    margin: 0 ;
+    
+}
+
+.goals ol {
+    padding-left: 20px;
+}
+
+.links a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #1e88e5;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #1565c0;
+}
+
+.time-display {
+    text-align: center;
+}
+
+.time-display .time-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.time-display .time-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f7be03;
+    color: #000;
+    font-size: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    background-color: #f5c903;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    header, main, footer {
+        margin: 10px;
+        padding: 15px;
+    }
+}
